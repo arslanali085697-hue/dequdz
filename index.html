@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DEQUDZ | Where Business Grow</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Font: Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Netlify Identity Widget -->
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #000000;
+            color: #ffffff;
+        }
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    </style>
+</head>
+<body class="bg-black text-white antialiased selection:bg-white selection:text-black min-h-screen relative overflow-x-hidden">
+
+    <!-- Responsive Sleek Floating Pill Navbar with Mobile Menu -->
+    <nav class="fixed top-3 sm:top-4 left-1/2 -translate-x-1/2 w-[92%] sm:w-[85%] max-w-5xl z-50 py-2.5 px-4 sm:px-6 rounded-3xl md:rounded-full bg-black/90 border border-white/20 shadow-2xl backdrop-blur-md transition-all duration-300">
+        <div class="flex items-center justify-between">
+            <!-- Logo -->
+            <a href="#hero" class="flex items-center">
+                <img src="logo.png" alt="DEQUDZ Logo" class="h-6 sm:h-7 object-contain">
+            </a>
+            
+            <!-- Desktop Navigation Links -->
+            <div class="hidden md:flex items-center space-x-6 text-xs uppercase tracking-widest font-medium text-gray-300">
+                <a href="#hero" class="hover:text-white transition">Home</a>
+                <a href="#about" class="hover:text-white transition">About</a>
+                <a href="#guarantees" class="hover:text-white transition">Guarantees</a>
+                <a href="#process" class="hover:text-white transition">Framework</a>
+                <a href="#pricing" class="hover:text-white transition">Plans</a>
+                <a href="#mission" class="hover:text-white transition">Mission</a>
+                <a href="#contact" class="hover:text-white transition">Contact</a>
+            </div>
+
+            <!-- Right Controls: Talk Button & Hamburger Toggle -->
+            <div class="flex items-center space-x-3">
+                <a href="https://wa.me/923056537766" target="_blank" class="px-3.5 py-1.5 text-[10px] sm:text-xs font-semibold uppercase tracking-wider bg-white text-black rounded-full hover:bg-gray-200 transition">
+                    TALK NOW
+                </a>
+                
+                <!-- Mobile 3 Lines Hamburger Menu Button -->
+                <button id="mobileMenuBtn" class="md:hidden text-white text-lg px-2 py-1 focus:outline-none hover:text-gray-300">
+                    <i class="fa-solid fa-bars" id="menuIcon"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Expandable Dropdown Menu -->
+        <div id="mobileMenu" class="hidden md:hidden flex-col space-y-3 pt-4 pb-2 border-t border-white/10 text-xs uppercase tracking-widest font-medium text-gray-300 text-center mt-3">
+            <a href="#hero" onclick="toggleMobileMenu()" class="hover:text-white py-1">Home</a>
+            <a href="#about" onclick="toggleMobileMenu()" class="hover:text-white py-1">About</a>
+            <a href="#guarantees" onclick="toggleMobileMenu()" class="hover:text-white py-1">Guarantees</a>
+            <a href="#process" onclick="toggleMobileMenu()" class="hover:text-white py-1">Framework</a>
+            <a href="#pricing" onclick="toggleMobileMenu()" class="hover:text-white py-1">Plans</a>
+            <a href="#mission" onclick="toggleMobileMenu()" class="hover:text-white py-1">Mission</a>
+            <a href="#contact" onclick="toggleMobileMenu()" class="hover:text-white py-1">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="relative w-full h-screen overflow-hidden flex flex-col justify-start pt-28 sm:pt-40 items-center text-center px-4">
+        <video src="g.mp4" autoplay loop muted playsinline class="absolute inset-0 w-full h-full object-cover z-0"></video>
+        <div class="absolute inset-0 bg-black/60 z-0"></div>
+        
+        <div class="relative z-10 max-w-3xl mx-auto flex flex-col items-center">
+            <span class="text-[9px] sm:text-xs uppercase tracking-[0.25em] px-3 py-1 border border-white/30 rounded-full mb-3 bg-black/40">Digital Engineering Studio</span>
+            <h1 class="text-lg sm:text-2xl md:text-3xl font-medium tracking-wide uppercase text-white mb-3">
+                dequdz where business grow
+            </h1>
+            <p class="text-xs sm:text-sm text-gray-300 max-w-xl mb-6 leading-relaxed">
+                High-speed static architectures, zero monthly hosting overhead, and autonomous AI integrations built for digital dominance.
+            </p>
+            <div class="flex space-x-3 sm:space-x-4">
+                <a href="#pricing" class="px-5 py-2 bg-white text-black text-xs font-semibold uppercase tracking-wider rounded-full hover:bg-gray-200 transition">View Plans</a>
+                <a href="#about" class="px-5 py-2 bg-black text-white text-xs font-semibold uppercase tracking-wider rounded-full border border-white/30 hover:bg-white/10 transition">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 px-6 max-w-6xl mx-auto border-b border-white/10">
+        <div class="text-center mb-12">
+            <span class="text-xs font-mono uppercase tracking-widest text-gray-400">[ ARCHITECTURE ]</span>
+            <h2 class="text-2xl sm:text-3xl font-bold uppercase mt-2">Why DEQUDZ?</h2>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+            <div>
+                <h3 class="text-lg sm:text-xl font-semibold mb-3 text-white">Engineering The Future Of Static Web</h3>
+                <p class="text-xs sm:text-sm text-gray-400 leading-relaxed mb-4">
+                    At DEQUDZ, we build blazing-fast static architectures that eliminate database bloat, server vulnerabilities, and recurring monthly hosting bills.
+                </p>
+                <p class="text-xs sm:text-sm text-gray-400 leading-relaxed">
+                    Combined with bespoke UI design and integrated AI chatbots, your business gets a 24/7 conversion engine that costs $0 to host forever.
+                </p>
+            </div>
+            <div class="grid grid-cols-2 gap-4">
+                <div class="border border-white/20 p-4 sm:p-5 rounded-2xl bg-black">
+                    <h4 class="text-xl sm:text-2xl font-bold mb-1">0 ms</h4>
+                    <p class="text-[11px] text-gray-400">Database Latency</p>
+                </div>
+                <div class="border border-white/20 p-4 sm:p-5 rounded-2xl bg-black">
+                    <h4 class="text-xl sm:text-2xl font-bold mb-1">0 PKR</h4>
+                    <p class="text-[11px] text-gray-400">Monthly Hosting Overhead</p>
+                </div>
+                <div class="border border-white/20 p-4 sm:p-5 rounded-2xl bg-black">
+                    <h4 class="text-xl sm:text-2xl font-bold mb-1">100%</h4>
+                    <p class="text-[11px] text-gray-400">Static Security</p>
+                </div>
+                <div class="border border-white/20 p-4 sm:p-5 rounded-2xl bg-black">
+                    <h4 class="text-xl sm:text-2xl font-bold mb-1">24/7</h4>
+                    <p class="text-[11px] text-gray-400">AI Sales Agent</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hardcoded Section 1: Our Guarantees -->
+    <section id="guarantees" class="py-20 px-6 max-w-6xl mx-auto border-b border-white/10">
+        <div class="text-center mb-12">
+            <span class="text-xs font-mono uppercase tracking-widest text-gray-400">[ TRUST & SAFETY ]</span>
+            <h2 class="text-2xl sm:text-3xl font-bold uppercase mt-2">Our Guarantees</h2>
+            <p class="text-xs sm:text-sm text-gray-400 max-w-lg mx-auto mt-2">Zero Risk. Maximum Quality. We're so confident in our work that we remove all the risk from your side.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
+            <div class="border border-white/20 hover:border-white/50 bg-black p-6 sm:p-8 rounded-2xl flex flex-col justify-between transition">
+                <div>
+                    <span class="text-[9px] font-mono uppercase px-2.5 py-1 border border-white/30 rounded-full inline-block mb-4">No Upfront Cost</span>
+                    <h3 class="text-lg font-bold uppercase mb-2">0 PKR Advance Demo</h3>
+                    <p class="text-xs text-gray-400 leading-relaxed">
+                        Get a full custom design demo built for your business before paying a single rupee. See it, love it, then pay.
+                    </p>
+                </div>
+                <div class="mt-6 pt-4 border-t border-white/10 flex items-center justify-between text-xs font-mono text-gray-300">
+                    <span>Risk Level:</span>
+                    <span class="text-emerald-400 font-bold">0% Risk</span>
+                </div>
+            </div>
+
+            <div class="border border-white bg-black p-6 sm:p-8 rounded-2xl flex flex-col justify-between shadow-2xl relative">
+                <div class="absolute -top-3 right-6 bg-white text-black text-[9px] font-bold uppercase px-3 py-1 rounded-full">ASSURED</div>
+                <div>
+                    <span class="text-[9px] font-mono uppercase px-2.5 py-1 border border-white/30 rounded-full inline-block mb-4">Money-Back Assured</span>
+                    <h3 class="text-lg font-bold uppercase mb-2">100% Cash Return Guarantee</h3>
+                    <p class="text-xs text-gray-400 leading-relaxed">
+                        Not satisfied with the final product? Get a full refund. No questions asked. Your satisfaction is our absolute priority.
+                    </p>
+                </div>
+                <div class="mt-6 pt-4 border-t border-white/10 flex items-center justify-between text-xs font-mono text-gray-300">
+                    <span>Protection:</span>
+                    <span class="text-emerald-400 font-bold">100% Refundable</span>
+                </div>
+            </div>
+
+            <div class="border border-white/20 hover:border-white/50 bg-black p-6 sm:p-8 rounded-2xl flex flex-col justify-between transition">
+                <div>
+                    <span class="text-[9px] font-mono uppercase px-2.5 py-1 border border-white/30 rounded-full inline-block mb-4">Speed Benchmark</span>
+                    <h3 class="text-lg font-bold uppercase mb-2">Enterprise Performance</h3>
+                    <p class="text-xs text-gray-400 leading-relaxed">
+                        Every website we deliver scores 90+ on PageSpeed with ultra-fast load times and premium UI/UX standards.
+                    </p>
+                </div>
+                <div class="mt-6 pt-4 border-t border-white/10 flex items-center justify-between text-xs font-mono text-gray-300">
+                    <span>Target Score:</span>
+                    <span class="text-white font-bold">90+ PageSpeed</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hardcoded Section 2: Problem, Solution & Results Framework -->
+    <section id="process" class="py-20 px-6 max-w-6xl mx-auto border-b border-white/10">
+        <div class="text-center mb-12">
+            <span class="text-xs font-mono uppercase tracking-widest text-gray-400">[ FRAMEWORK ]</span>
+            <h2 class="text-2xl sm:text-3xl font-bold uppercase mt-2">How We Transform Businesses</h2>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
+            <div class="bg-black border border-white/20 p-6 sm:p-8 rounded-2xl relative">
+                <span class="text-4xl font-extrabold font-mono text-white/20 block mb-2">01</span>
+                <h3 class="text-lg font-bold uppercase mb-3 text-red-400">The Problem</h3>
+                <p class="text-xs text-gray-400 leading-relaxed mb-6">
+                    Local businesses were stuck with slow, outdated websites that generated zero leads. Poor mobile experience, 10+ second load times, and outdated layouts cost them customers daily.
+                </p>
+                <div class="flex flex-wrap gap-2 text-[10px] font-mono">
+                    <span class="px-2.5 py-1 border border-white/10 rounded-full text-gray-400">Slow Load</span>
+                    <span class="px-2.5 py-1 border border-white/10 rounded-full text-gray-400">Zero Leads</span>
+                    <span class="px-2.5 py-1 border border-white/10 rounded-full text-gray-400">Outdated Design</span>
+                </div>
+            </div>
+
+            <div class="bg-black border border-white/20 p-6 sm:p-8 rounded-2xl relative">
+                <span class="text-4xl font-extrabold font-mono text-white/20 block mb-2">02</span>
+                <h3 class="text-lg font-bold uppercase mb-3 text-white">The Solution</h3>
+                <p class="text-xs text-gray-400 leading-relaxed mb-6">
+                    Webeflow delivered a complete redesign using modern tech stacks, custom UI/UX layouts, optimized assets, and conversion-focused architecture — all without asking for advance payment.
+                </p>
+                <div class="flex flex-wrap gap-2 text-[10px] font-mono">
+                    <span class="px-2.5 py-1 border border-white/20 rounded-full text-gray-200">Custom UI/UX</span>
+                    <span class="px-2.5 py-1 border border-white/20 rounded-full text-gray-200">Fast Stack</span>
+                    <span class="px-2.5 py-1 border border-white/20 rounded-full text-gray-200">0 PKR Demo</span>
+                </div>
+            </div>
+
+            <div class="bg-black border border-white/20 p-6 sm:p-8 rounded-2xl relative">
+                <span class="text-4xl font-extrabold font-mono text-white/20 block mb-2">03</span>
+                <h3 class="text-lg font-bold uppercase mb-3 text-emerald-400">The Result</h3>
+                <p class="text-xs text-gray-400 leading-relaxed mb-6">
+                    The new website transformed their online presence with measurable impact across all key metrics and instant customer trust.
+                </p>
+                <div class="grid grid-cols-3 gap-2 text-center border-t border-white/10 pt-4">
+                    <div>
+                        <div class="text-lg font-bold text-white">90+</div>
+                        <div class="text-[9px] text-gray-400 font-mono">PageSpeed</div>
+                    </div>
+                    <div>
+                        <div class="text-lg font-bold text-white">3x</div>
+                        <div class="text-[9px] text-gray-400 font-mono">Conversions</div>
+                    </div>
+                    <div>
+                        <div class="text-lg font-bold text-white">100%</div>
+                        <div class="text-[9px] text-gray-400 font-mono">Mobile</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section (DYNAMIC RENDER VIA DECAP CMS DATA) -->
+    <section id="pricing" class="py-20 px-6 max-w-6xl mx-auto border-b border-white/10">
+        <div class="text-center mb-12">
+            <span class="text-xs font-mono uppercase tracking-widest text-gray-400">[ PACKAGES ]</span>
+            <h2 class="text-2xl sm:text-3xl font-bold uppercase mt-2">Commercial Plans</h2>
+        </div>
+
+        <div id="plansGrid" class="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
+            <p class="text-center text-gray-400 col-span-full py-8 text-xs font-mono">Loading dynamic plans from Decap CMS...</p>
+        </div>
+    </section>
+
+    <!-- Hardcoded Section 3: Founder Mission & Vision -->
+    <section id="mission" class="py-20 px-6 max-w-5xl mx-auto border-b border-white/10">
+        <div class="bg-black border border-white/20 p-8 sm:p-12 rounded-3xl relative overflow-hidden">
+            <div class="max-w-3xl mx-auto text-center">
+                <span class="text-xs font-mono uppercase tracking-widest text-gray-400 block mb-3">[ MISSION STATEMENT ]</span>
+                <h2 class="text-2xl sm:text-4xl font-bold uppercase mb-6 leading-tight">Built To Digitize Local Businesses</h2>
+                
+                <blockquote class="text-sm sm:text-lg text-gray-200 italic leading-relaxed mb-8">
+                    "At Webeflow, our mission is to digitize local businesses with world-class design standards without breaking the bank."
+                </blockquote>
+
+                <div class="flex items-center justify-center space-x-3 mb-8">
+                    <div class="w-10 h-10 rounded-full bg-white text-black font-bold flex items-center justify-center text-sm border border-white">
+                        A
+                    </div>
+                    <div class="text-left">
+                        <div class="text-sm font-bold uppercase text-white tracking-wider">Arslan</div>
+                        <div class="text-xs text-gray-400 font-mono">Founder, Webeflow</div>
+                    </div>
+                </div>
+
+                <p class="text-xs sm:text-sm text-gray-400 leading-relaxed max-w-2xl mx-auto mb-8">
+                    We believe every local business deserves a stunning online presence. From gyms and academies to stores and agencies — we craft websites that don't just look great, they convert visitors into customers.
+                </p>
+
+                <div class="flex flex-wrap justify-center gap-4 text-xs font-mono text-gray-300">
+                    <span class="px-4 py-2 border border-white/20 rounded-full bg-white/5">✓ Fast Delivery</span>
+                    <span class="px-4 py-2 border border-white/20 rounded-full bg-white/5">✓ Modern Tech Stack</span>
+                    <span class="px-4 py-2 border border-white/20 rounded-full bg-white/5">✓ Responsive Design</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hardcoded Section 4: Client Testimonials Grid -->
+    <section id="testimonials" class="py-20 px-6 max-w-6xl mx-auto border-b border-white/10">
+        <div class="text-center mb-12">
+            <span class="text-xs font-mono uppercase tracking-widest text-gray-400">[ SOCIAL PROOF ]</span>
+            <h2 class="text-2xl sm:text-3xl font-bold uppercase mt-2">What Local Businesses Say</h2>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
+            <div class="bg-black border border-white/20 p-6 rounded-2xl flex flex-col justify-between">
+                <div>
+                    <div class="text-amber-400 text-xs mb-3">★★★★★</div>
+                    <p class="text-xs text-gray-300 leading-relaxed mb-4">
+                        "Pehle advance demo banaya and exact hamare gym requiremets ke mutabiq design kiya. Speed aur look dono kamaal hain!"
+                    </p>
+                </div>
+                <div class="pt-4 border-t border-white/10">
+                    <h4 class="text-xs font-bold uppercase text-white">Fitness Arena</h4>
+                    <p class="text-[10px] text-gray-400 font-mono">Local Gym Owner</p>
+                </div>
+            </div>
+
+            <div class="bg-black border border-white/20 p-6 rounded-2xl flex flex-col justify-between">
+                <div>
+                    <div class="text-amber-400 text-xs mb-3">★★★★★</div>
+                    <p class="text-xs text-gray-300 leading-relaxed mb-4">
+                        "0 PKR Advance Demo feature ne humein confidence diya. Landing page bhot fast hai aur student inquiries double ho chuki hain."
+                    </p>
+                </div>
+                <div class="pt-4 border-t border-white/10">
+                    <h4 class="text-xs font-bold uppercase text-white">Apex Academy</h4>
+                    <p class="text-[10px] text-gray-400 font-mono">Educational Campus</p>
+                </div>
+            </div>
+
+            <div class="bg-black border border-white/20 p-6 rounded-2xl flex flex-col justify-between">
+                <div>
+                    <div class="text-amber-400 text-xs mb-3">★★★★★</div>
+                    <p class="text-xs text-gray-300 leading-relaxed mb-4">
+                        "0 PKR monthly hosting fee feature sab se best hai. Koi mahana kharcha nahi aur AI chatbot 24/7 clients handle kar raha hai."
+                    </p>
+                </div>
+                <div class="pt-4 border-t border-white/10">
+                    <h4 class="text-xs font-bold uppercase text-white">Royal Marriage Hall</h4>
+                    <p class="text-[10px] text-gray-400 font-mono">Event Management</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 px-6 max-w-4xl mx-auto">
+        <div class="text-center mb-10">
+            <span class="text-xs font-mono uppercase tracking-widest text-gray-400">[ CONNECT ]</span>
+            <h2 class="text-2xl sm:text-3xl font-bold uppercase mt-2">Get In Touch</h2>
+        </div>
+        
+        <div class="bg-black border border-white/20 p-6 sm:p-8 rounded-2xl">
+            <form class="space-y-4" onsubmit="event.preventDefault(); alert('Inquiry Received!');">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <input type="text" placeholder="Your Name" required class="w-full bg-black border border-white/20 rounded-xl p-3 text-xs text-white focus:outline-none focus:border-white">
+                    <input type="tel" placeholder="Phone Number" required class="w-full bg-black border border-white/20 rounded-xl p-3 text-xs text-white focus:outline-none focus:border-white">
+                </div>
+                <select id="packageSelect" required class="w-full bg-black border border-white/20 rounded-xl p-3 text-xs text-white focus:outline-none focus:border-white">
+                    <option value="">Select Package</option>
+                </select>
+                <textarea rows="3" placeholder="Project Details" required class="w-full bg-black border border-white/20 rounded-xl p-3 text-xs text-white focus:outline-none focus:border-white"></textarea>
+                <button type="submit" class="w-full py-3 bg-white text-black font-semibold text-xs uppercase tracking-wider rounded-xl hover:bg-gray-200 transition">Send Message</button>
+            </form>
+            
+            <div class="mt-8 pt-6 border-t border-white/10 flex flex-col md:flex-row justify-between items-center text-xs text-gray-400 gap-3">
+                <div>Direct Call / WhatsApp: <a href="tel:+923056537766" class="text-white underline font-mono">03056537766</a></div>
+                <div><a href="https://wa.me/923056537766" target="_blank" class="text-white underline">Open WhatsApp Chat →</a></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-6 text-center text-xs text-gray-500 border-t border-white/10">
+        DEQUDZ © 2026. All rights reserved.
+    </footer>
+
+    <!-- Global Showcase Modal Popup -->
+    <div id="showcaseModal" class="fixed inset-0 z-50 hidden bg-black/80 backdrop-blur-md flex items-center justify-center p-4">
+        <div class="bg-black border border-white/30 rounded-2xl w-full max-w-5xl h-[85vh] flex flex-col shadow-2xl overflow-hidden relative">
+            <div class="p-4 border-b border-white/20 flex items-center justify-between bg-black">
+                <div>
+                    <h3 id="modalPlanTitle" class="text-sm font-bold uppercase tracking-wider text-white">Plan Previews</h3>
+                    <p class="text-[10px] text-gray-400">Click tabs to view live demo sites for this package</p>
+                </div>
+                <div class="flex items-center gap-3">
+                    <a id="externalDemoLink" href="#" target="_blank" class="text-xs text-gray-300 hover:text-white underline flex items-center gap-1 font-mono">
+                        Open in New Tab <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+                    </a>
+                    <button onclick="closeShowcaseModal()" class="text-gray-400 hover:text-white text-lg px-2"><i class="fa-solid fa-xmark"></i></button>
+                </div>
+            </div>
+
+            <div id="modalTabs" class="flex overflow-x-auto border-b border-white/10 bg-black/50 p-2 gap-2"></div>
+
+            <div class="flex-1 bg-black relative">
+                <iframe id="modalIframe" class="w-full h-full border-0" src=""></iframe>
+            </div>
+        </div>
+    </div>
+
+    <!-- Fixed Floating AI Widget Component -->
+    <div class="fixed bottom-3 right-3 sm:bottom-6 sm:right-6 z-50 flex flex-col items-end">
+        <div id="dequChatWindow" class="hidden mb-3 w-[calc(100vw-1.5rem)] sm:w-80 md:w-96 max-w-[380px] h-[420px] bg-black/95 border border-white/30 rounded-2xl flex-col shadow-2xl overflow-hidden backdrop-blur-xl">
+            <div class="p-3.5 border-b border-white/20 flex items-center justify-between bg-black">
+                <div class="flex items-center space-x-2.5">
+                    <img src="1.jpg" alt="DEQU" class="w-7 h-7 rounded-full object-cover border border-white">
+                    <div>
+                        <h4 class="text-xs font-bold text-white tracking-wider">DEQU AI</h4>
+                        <span class="text-[9px] text-gray-400 flex items-center gap-1">
+                            <span class="w-1.5 h-1.5 bg-green-500 rounded-full animate-pulse"></span> Official AI Representative
+                        </span>
+                    </div>
+                </div>
+                <button id="closeChat" class="text-gray-400 hover:text-white text-base px-2 py-1"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            
+            <div id="chatMessages" class="flex-1 p-3.5 overflow-y-auto space-y-3 text-xs font-sans flex flex-col">
+                <div class="bg-white/10 text-white p-2.5 rounded-xl max-w-[85%] border border-white/10 self-start">
+                    Assalam-o-Alaikum! Main **DEQU** hoon, DEQUDZ agency ka official AI assistant. Aap ke business ke liye website ya plan select karne mein main aap ki kya madad kar sakta hoon?
+                </div>
+            </div>
+            
+            <div class="p-2.5 border-t border-white/20 flex items-center gap-2 bg-black">
+                <input type="text" id="userInput" placeholder="Type a message..." class="flex-1 bg-black border border-white/20 rounded-xl px-3 py-2 text-xs text-white focus:outline-none focus:border-white">
+                <button id="sendBtn" class="bg-white text-black px-3.5 py-2 rounded-xl text-xs font-bold hover:bg-gray-200 transition"><i class="fa-solid fa-paper-plane"></i></button>
+            </div>
+        </div>
+
+        <button id="dequLauncher" class="w-12 h-12 sm:w-14 sm:h-14 rounded-full border-2 border-white overflow-hidden cursor-pointer shadow-2xl hover:scale-105 transition-transform flex items-center justify-center bg-black">
+            <img src="1.jpg" alt="DEQU Launcher" class="w-full h-full object-cover">
+        </button>
+    </div>
+
+    <!-- Mobile Menu Toggle Logic -->
+    <script>
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const menuIcon = document.getElementById('menuIcon');
+
+        function toggleMobileMenu() {
+            mobileMenu.classList.toggle('hidden');
+            mobileMenu.classList.toggle('flex');
+            if (mobileMenu.classList.contains('hidden')) {
+                menuIcon.className = 'fa-solid fa-bars';
+            } else {
+                menuIcon.className = 'fa-solid fa-xmark';
+            }
+        }
+
+        mobileMenuBtn.addEventListener('click', toggleMobileMenu);
+    </script>
+
+    <!-- AI Chatbot Logic & Dual CMS Sync (Plans + Extra Knowledge) -->
+    <script>
+        const GROQ_API_KEY = "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"; 
+        const GROQ_MODEL = "llama-3.3-70b-versatile";
+
+        let conversationHistory = [
+            { 
+                role: "system", 
+                content: `You are DEQU, the official AI Assistant for DEQUDZ digital agency.
+
+ROLE & BEHAVIOR RULES:
+- Professional, respectful, clear, and helpful.
+- Speak in clean Roman Urdu / Urdu English.
+- STRICTLY AVOID being over-casual, slangy, or using excessive emojis. Keep tone formal yet approachable.
+- ALWAYS maintain conversation memory. Do NOT ask questions that the user has already answered.
+
+TRIGGER INSTRUCTIONS:
+- CRITICAL: Whenever the user asks to see plans, packages, pricing, or asks "plans dikhao" / "packages dikhao", ALWAYS include the tag <plango> in your response message.
+
+CONVERSATION & SALES LOGIC:
+1. Recommend relevant plans by their official Name and Price from our website.
+2. Mention core guarantees: 0 PKR Monthly Hosting Fee (Lifetime Free) & 0 PKR Advance Demo Guarantee.
+3. Guide users politely to WhatsApp: "Aap WhatsApp (03056537766) par contact kar sakte hain."
+4. Keep responses concise (2 to 3 sentences max).` 
+            }
+        ];
+
+        function updateAISystemPrompt(plans, extraKnowledge) {
+            let plansSummary = plans.map(p => {
+                const feats = (p.features || []).join(', ');
+                return `- Plan Name: "${p.title}" | Price: ${p.price} | Description: ${p.subtitle || 'N/A'} | Included: ${feats}`;
+            }).join('\n');
+
+            conversationHistory[0].content = `You are DEQU, the official AI Assistant for DEQUDZ digital agency.
+
+ROLE & BEHAVIOR RULES:
+- Professional, respectful, clear, and helpful.
+- Speak in clean Roman Urdu / Urdu English.
+- STRICTLY AVOID being over-casual, slangy, or using excessive emojis. Keep tone formal yet approachable.
+- ALWAYS maintain conversation memory. Do NOT ask questions that the user has already answered.
+
+TRIGGER INSTRUCTIONS:
+- CRITICAL: Whenever the user asks to see plans, packages, pricing, or asks "plans dikhao" / "packages dikhao", ALWAYS include the tag <plango> anywhere in your response text.
+
+AVAILABLE COMMERCIAL PLANS ON DEQUDZ WEBSITE:
+${plansSummary}
+
+EXTRA BUSINESS KNOWLEDGE & FAQS FROM CMS:
+${extraKnowledge || "No extra knowledge provided."}
+
+CONVERSATION & SALES LOGIC:
+1. Use BOTH commercial plans and extra business knowledge above to accurately answer user queries.
+2. If the user asks general questions or specific FAQs, answer based on the EXTRA BUSINESS KNOWLEDGE provided.
+3. Always emphasize our core value propositions: 0 PKR Monthly Hosting Fee (Lifetime Free) & 0 PKR Advance Demo Guarantee.
+4. Guide users politely to WhatsApp for finalizing orders: "Aap WhatsApp (03056537766) par contact kar sakte hain."
+5. Keep responses concise (2 to 3 sentences max).`;
+        }
+    </script>
+
+    <!-- Dynamic CMS Plans Fetcher & Extra Knowledge Fetcher -->
+    <script>
+        let globalPlansData = [];
+        let globalExtraKnowledge = "";
+
+        function formatUrl(url) {
+            if (!url) return '#';
+            url = url.trim();
+            if (url.startsWith('http://') || url.startsWith('https://')) {
+                return url;
+            }
+            return 'https://' + url;
+        }
+
+        async function fetchAIExtraKnowledge() {
+            try {
+                const res = await fetch('content/knowledge.json');
+                const data = await res.json();
+                if (data && data.extra_info) {
+                    globalExtraKnowledge = data.extra_info;
+                }
+            } catch(e) {
+                console.log("No extra knowledge file found or loading error:", e);
+            }
+        }
+
+        async function fetchDynamicPlans() {
+            const grid = document.getElementById('plansGrid');
+            const selectDropdown = document.getElementById('packageSelect');
+
+            await fetchAIExtraKnowledge();
+
+            try {
+                const response = await fetch('content/plans.json');
+                const data = await response.json();
+                const plans = data.plans_list || [];
+                globalPlansData = plans;
+
+                updateAISystemPrompt(plans, globalExtraKnowledge);
+
+                if (plans.length === 0) {
+                    grid.innerHTML = '<p class="text-center text-gray-400 col-span-full py-8 text-xs font-mono">No plans available at the moment.</p>';
+                    return;
+                }
+
+                grid.innerHTML = '';
+                selectDropdown.innerHTML = '<option value="">Select Package</option>';
+
+                plans.forEach((plan, index) => {
+                    const option = document.createElement('option');
+                    option.value = plan.title;
+                    option.innerText = `${plan.title} (${plan.price})`;
+                    selectDropdown.appendChild(option);
+
+                    const isFeatured = plan.is_featured;
+                    const featuresHtml = (plan.features || []).map(f => `<li>✓ ${f}</li>`).join('');
+                    const hasDemos = plan.showcase_links && plan.showcase_links.length > 0;
+
+                    const card = document.createElement('div');
+                    card.className = `bg-black border ${isFeatured ? 'border-white shadow-2xl relative' : 'border-white/20 hover:border-white/50'} p-6 sm:p-8 rounded-2xl flex flex-col justify-between transition`;
+                    
+                    card.innerHTML = `
+                        ${isFeatured ? '<div class="absolute -top-3 right-6 bg-white text-black text-[9px] font-bold uppercase px-3 py-1 rounded-full">BEST VALUE</div>' : ''}
+                        <div>
+                            ${plan.badge ? `<span class="text-[9px] font-mono uppercase px-2.5 py-1 border border-white/30 rounded-full inline-block mb-4">${plan.badge}</span>` : ''}
+                            <h3 class="text-lg font-bold uppercase mb-1">${plan.title}</h3>
+                            <p class="text-xs text-gray-400 mb-4">${plan.subtitle || ''}</p>
+                            <div class="text-2xl sm:text-3xl font-bold mb-6">${plan.price}</div>
+                            <ul class="space-y-2.5 text-xs text-gray-300 font-mono mb-8">
+                                ${featuresHtml}
+                            </ul>
+                        </div>
+                        <div class="space-y-2">
+                            ${hasDemos ? `
+                                <button onclick="openShowcaseModal(${index})" class="w-full py-2 bg-black border border-white/40 text-white text-center text-xs font-semibold uppercase tracking-wider rounded-full hover:bg-white hover:text-black transition flex items-center justify-center gap-2">
+                                    <i class="fa-solid fa-eye text-[11px]"></i> Live Demos (${plan.showcase_links.length})
+                                </button>
+                            ` : ''}
+                            <a href="${formatUrl(plan.cta_link || '#contact')}" ${plan.cta_link && !plan.cta_link.startsWith('#') ? 'target="_blank"' : ''} class="block w-full py-2.5 bg-white text-black text-center text-xs font-semibold uppercase tracking-wider rounded-full hover:bg-gray-200 transition">
+                                ${plan.cta_text || 'Get Started'}
+                            </a>
+                        </div>
+                    `;
+                    grid.appendChild(card);
+                });
+
+            } catch (err) {
+                console.error("Error loading plans:", err);
+                grid.innerHTML = '<p class="text-center text-red-400 col-span-full py-8 text-xs font-mono">Failed to load dynamic plans from CMS.</p>';
+            }
+        }
+
+        // Modal Functions
+        function openShowcaseModal(planIndex) {
+            const plan = globalPlansData[planIndex];
+            if (!plan || !plan.showcase_links || plan.showcase_links.length === 0) return;
+
+            document.getElementById('modalPlanTitle').innerText = `${plan.title} - Showcase Previews`;
+            const tabsContainer = document.getElementById('modalTabs');
+            tabsContainer.innerHTML = '';
+
+            plan.showcase_links.forEach((demo, idx) => {
+                const formattedDemoUrl = formatUrl(demo.url);
+                const btn = document.createElement('button');
+                btn.className = `px-4 py-1.5 text-xs font-mono rounded-lg border transition whitespace-nowrap ${idx === 0 ? 'bg-white text-black border-white' : 'bg-black text-gray-400 border-white/20 hover:text-white'}`;
+                btn.innerText = demo.title || `Demo ${idx + 1}`;
+                btn.onclick = () => switchDemoTab(formattedDemoUrl, btn);
+                tabsContainer.appendChild(btn);
+            });
+
+            switchDemoTab(formatUrl(plan.showcase_links[0].url), tabsContainer.children[0]);
+            document.getElementById('showcaseModal').classList.remove('hidden');
+        }
+
+        function switchDemoTab(url, activeBtn) {
+            document.getElementById('modalIframe').src = url;
+            document.getElementById('externalDemoLink').href = url;
+
+            const buttons = document.getElementById('modalTabs').children;
+            for (let btn of buttons) {
+                btn.className = 'px-4 py-1.5 text-xs font-mono rounded-lg border transition whitespace-nowrap bg-black text-gray-400 border-white/20 hover:text-white';
+            }
+            activeBtn.className = 'px-4 py-1.5 text-xs font-mono rounded-lg border transition whitespace-nowrap bg-white text-black border-white';
+        }
+
+        function closeShowcaseModal() {
+            document.getElementById('showcaseModal').classList.add('hidden');
+            document.getElementById('modalIframe').src = '';
+        }
+
+        document.addEventListener('DOMContentLoaded', fetchDynamicPlans);
+    </script>
+
+    <!-- Chatbot Event Listeners, Groq Connection & Trigger Tag Scanner -->
+    <script>
+        const launcher = document.getElementById('dequLauncher');
+        const chatWindow = document.getElementById('dequChatWindow');
+        const closeChat = document.getElementById('closeChat');
+        const sendBtn = document.getElementById('sendBtn');
+        const userInput = document.getElementById('userInput');
+        const chatMessages = document.getElementById('chatMessages');
+
+        launcher.addEventListener('click', () => {
+            chatWindow.classList.toggle('hidden');
+            chatWindow.classList.toggle('flex');
+        });
+
+        closeChat.addEventListener('click', () => {
+            chatWindow.classList.add('hidden');
+            chatWindow.classList.remove('flex');
+        });
+
+        // Trigger Scanner Function (Scans AI reply for <plango> or <plansgo>)
+        function checkAndExecuteTriggers(replyText) {
+            if (replyText.includes('<plango>') || replyText.includes('<plansgo>')) {
+                setTimeout(() => {
+                    const pricingSection = document.getElementById('pricing');
+                    if (pricingSection) {
+                        pricingSection.scrollIntoView({ behavior: 'smooth' });
+                    }
+                }, 400);
+            }
+        }
+
+        async function sendMessage() {
+            const text = userInput.value.trim();
+            if(!text) return;
+
+            const userDiv = document.createElement('div');
+            userDiv.className = 'bg-white text-black p-2.5 rounded-xl max-w-[85%] text-xs font-medium self-end';
+            userDiv.innerText = text;
+            chatMessages.appendChild(userDiv);
+            userInput.value = '';
+            chatMessages.scrollTop = chatMessages.scrollHeight;
+
+            conversationHistory.push({ role: "user", content: text });
+
+            const loadingDiv = document.createElement('div');
+            loadingDiv.className = 'bg-white/10 text-gray-400 p-2.5 rounded-xl max-w-[85%] text-xs italic border border-white/10 self-start';
+            loadingDiv.innerText = 'DEQU is thinking...';
+            chatMessages.appendChild(loadingDiv);
+            chatMessages.scrollTop = chatMessages.scrollHeight;
+
+            try {
+                const response = await fetch("https://api.groq.com/openai/v1/chat/completions", {
+                    method: 'POST',
+                    headers: { 
+                        'Authorization': `Bearer ${GROQ_API_KEY}`,
+                        'Content-Type': 'application/json' 
+                    },
+                    body: JSON.stringify({
+                        model: GROQ_MODEL,
+                        messages: conversationHistory,
+                        max_tokens: 150,
+                        temperature: 0.5
+                    })
+                });
+
+                const data = await response.json();
+                chatMessages.removeChild(loadingDiv);
+
+                let botReply = "Aap ki request process nahi ho saki. Baraye meharbani WhatsApp par rabta karein: 03056537766.";
+
+                if (data.choices && data.choices[0] && data.choices[0].message) {
+                    botReply = data.choices[0].message.content;
+                    conversationHistory.push({ role: "assistant", content: botReply });
+                }
+
+                // Check for trigger tag and execute scroll
+                checkAndExecuteTriggers(botReply);
+
+                // Strip trigger tags so user sees clean UI text
+                const cleanDisplayReply = botReply.replace(/<plango>/gi, '').replace(/<plansgo>/gi, '').trim();
+
+                const botDiv = document.createElement('div');
+                botDiv.className = 'bg-white/10 text-white p-2.5 rounded-xl max-w-[85%] text-xs border border-white/10 self-start';
+                botDiv.innerText = cleanDisplayReply;
+                chatMessages.appendChild(botDiv);
+                chatMessages.scrollTop = chatMessages.scrollHeight;
+
+            } catch(e) {
+                console.error("Fetch Error:", e);
+                chatMessages.removeChild(loadingDiv);
+                const errorDiv = document.createElement('div');
+                errorDiv.className = 'bg-white/10 text-white p-2.5 rounded-xl max-w-[85%] text-xs border border-white/10 self-start';
+                errorDiv.innerText = "Connection issue hai. Baraye meharbani WhatsApp par rabta karein: 03056537766.";
+                chatMessages.appendChild(errorDiv);
+                chatMessages.scrollTop = chatMessages.scrollHeight;
+            }
+        }
+
+        sendBtn.addEventListener('click', sendMessage);
+        userInput.addEventListener('keypress', (e) => {
+            if(e.key === 'Enter') sendMessage();
+        });
+    </script>
+
+    <!-- Netlify Identity Auth Redirect Script -->
+    <script>
+      if (window.netlifyIdentity) {
+        window.netlifyIdentity.on("init", user => {
+          if (!user) {
+            window.netlifyIdentity.on("login", () => {
+              document.location.href = "/admin/";
+            });
+          }
+        });
+      }
+    </script>
+</body>
+</html>

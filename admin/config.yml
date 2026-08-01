@@ -1,0 +1,40 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "assets/images"
+public_folder: "/assets/images"
+
+collections:
+  - name: "content"
+    label: "Website Content"
+    files:
+      - file: "content/plans.json"
+        label: "Commercial Plans"
+        name: "plans"
+        fields:
+          - label: "Plans List"
+            name: "plans_list"
+            widget: "list"
+            fields:
+              - { label: "Plan Title", name: "title", widget: "string" }
+              - { label: "Subtitle", name: "subtitle", widget: "string", required: false }
+              - { label: "Price", name: "price", widget: "string" }
+              - { label: "Badge Text", name: "badge", widget: "string", required: false }
+              - { label: "Is Featured (Best Value)", name: "is_featured", widget: "boolean", default: false }
+              - { label: "Features List", name: "features", widget: "list" }
+              - { label: "CTA Button Text", name: "cta_text", widget: "string", default: "Get Started" }
+              - { label: "CTA Link", name: "cta_link", widget: "string", default: "#contact" }
+              - label: "Showcase Demos"
+                name: "showcase_links"
+                widget: "list"
+                required: false
+                fields:
+                  - { label: "Demo Title (e.g. Marriage Hall)", name: "title", widget: "string" }
+                  - { label: "Live Demo URL", name: "url", widget: "string" }
+
+      - file: "content/knowledge.json"
+        label: "AI Knowledge Base & FAQs"
+        name: "knowledge"
+        fields:
+          - { label: "Extra Knowledge / FAQs / Business Info", name: "extra_info", widget: "markdown", default: "Hum custom web development, landing pages, aur AI chatbot integration ki services dete hain." }

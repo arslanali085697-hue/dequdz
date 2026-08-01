@@ -1,0 +1,22 @@
+{
+  "plans_list": [
+    {
+      "badge": "rs",
+      "is_featured": true,
+      "showcase_links": [
+        {
+          "title": "best",
+          "url": "https://webeflow.netlify.app/"
+        }
+      ],
+      "cta_link": "#contact",
+      "price": "RS-4000",
+      "subtitle": "best for low end business ",
+      "title": "small bussiness ",
+      "cta_text": "Get Started",
+      "features": [
+        "best"
+      ]
+    }
+  ]
+}
