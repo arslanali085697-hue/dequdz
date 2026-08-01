@@ -69,6 +69,28 @@
       "features": [
         "Full CMS Integration with Admin Panel Owner Can Edit Content & Images Anytime Ultra Premium UI/UX Design Advanced Scroll Animations High Conversion Setup Mobile Responsive + Blazing Fast"
       ]
+    },
+    {
+      "badge": "CHATBOT",
+      "is_featured": true,
+      "showcase_links": [
+        {
+          "title": "OUR OFFICIAL SITE",
+          "url": "https://dequdz.netlify.app/"
+        }
+      ],
+      "cta_link": "#contact",
+      "price": "RS-5000",
+      "subtitle": "CHAT BOT THAT WORK IN YOUR SITE ",
+      "title": "CHAT BOT",
+      "cta_text": "Get Started",
+      "features": [
+        "Transform your website into a high-converting sales engine with a dedicated AI sales chatbot that operates as a 24/7 digital salesman. This intelligent assistant instantly greets every visitor",
+        "eliminates wait times",
+        "and answers complex product",
+        "pricing",
+        "or service questions using your business data."
+      ]
     }
   ]
 }
