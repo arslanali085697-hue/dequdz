@@ -5,8 +5,8 @@
       "is_featured": true,
       "showcase_links": [
         {
-          "title": "best",
-          "url": "https://webeflow.netlify.app/"
+          "title": "Dream Property",
+          "url": "https://webeflow.github.io/property/"
         }
       ],
       "cta_link": "#contact",
@@ -15,7 +15,9 @@
       "title": "small bussiness ",
       "cta_text": "Get Started",
       "features": [
-        "best"
+        "website for a small business that offers a seamless",
+        "high performance experience with an advanced",
+        "modern user interface"
       ]
     }
   ]
