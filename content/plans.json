@@ -1,23 +1,75 @@
 {
   "plans_list": [
     {
-      "badge": "rs",
-      "is_featured": true,
+      "badge": "best",
+      "is_featured": false,
       "showcase_links": [
         {
           "title": "Dream Property",
           "url": "https://webeflow.github.io/property/"
+        },
+        {
+          "url": "https://webeflow.github.io/edu1/",
+          "title": "Premium Academy"
         }
       ],
       "cta_link": "#contact",
       "price": "RS-4000",
-      "subtitle": "best for low end business ",
-      "title": "small bussiness ",
+      "subtitle": "For small business operating on a limited budget",
+      "title": "SMALL BUSINESS",
       "cta_text": "Get Started",
       "features": [
         "website for a small business that offers a seamless",
         "high performance experience with an advanced",
         "modern user interface"
+      ]
+    },
+    {
+      "badge": "RS",
+      "is_featured": true,
+      "showcase_links": [
+        {
+          "title": "AL NOOR",
+          "url": "https://webeflow.github.io/webeflow/?page=home"
+        },
+        {
+          "url": "https://webeflow.github.io/techlap/#",
+          "title": "TECH LAP"
+        }
+      ],
+      "cta_link": "#contact",
+      "price": "RS-7000",
+      "subtitle": "Advanced Animations & Interactions Premium UI/UX Layout Multi-section Landing Page Mobile Responsive Fast Speed One-time Edit Support",
+      "title": "SMALL BUSINESS BEST UI ",
+      "cta_text": "Get Started",
+      "features": [
+        "Advanced Animations & Interactions Premium UI/UX Layout Multi-section Landing Page Mobile Responsive Fast Speed One-time Edit Support"
+      ]
+    },
+    {
+      "badge": "RS",
+      "is_featured": true,
+      "showcase_links": [
+        {
+          "title": "PHOTO SHOOT",
+          "url": "https://webeflow.github.io/noor/"
+        },
+        {
+          "title": "PHOTOGRAPHY",
+          "url": "https://webeflow.github.io/ammatphotography/"
+        },
+        {
+          "title": "Premium Academy",
+          "url": "https://webeflow.github.io/edu/"
+        }
+      ],
+      "cta_link": "#contact",
+      "price": "RS-15000",
+      "subtitle": "FULL CMS ADMIN PANAL",
+      "title": "ADVANCE BUSINESS",
+      "cta_text": "Get Started",
+      "features": [
+        "Full CMS Integration with Admin Panel Owner Can Edit Content & Images Anytime Ultra Premium UI/UX Design Advanced Scroll Animations High Conversion Setup Mobile Responsive + Blazing Fast"
       ]
     }
   ]
